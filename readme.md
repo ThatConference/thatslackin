@@ -1,4 +1,4 @@
-That slackin
+## That slackin
 _Repo for TC slackin site_
 
 ## Join Us!
