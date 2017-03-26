@@ -7,9 +7,9 @@ _Repo for TC slackin site_
 ---    
 Found that if running in Azure node_modules folder must be included as it fails build without it.  
 
-Environment variables required: 
-PORT
-SLACK_TOKEN
+Environment variables required:     
+PORT   
+SLACK_TOKEN    
 
 example docker run command:
 ```
