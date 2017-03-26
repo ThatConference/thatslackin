@@ -7,4 +7,14 @@ _Repo for TC slackin site_
 ---    
 Found that if running in Azure node_modules folder must be included as it fails build without it.  
 
-Runs great from [Xervo.io](https://xervo.io)
+Environment variables required: 
+PORT
+SLACK_TOKEN
+
+example docker run command:
+```
+docker run -d --env-file ./.env --name thatslackin -p 80:80 thatconference/thatslackin
+```
+
+Docker compose file is work-in-process
+
