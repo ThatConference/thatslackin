@@ -3,6 +3,7 @@ node_js:
 - '8'
 cache: npm
 script: 
+  - npm run deploy
 after_script: npm run alias
 env:
   global:
