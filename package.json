@@ -4,13 +4,15 @@
   "description": "That Conference THAT slackin WebSite",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"who needs tests, really 😢 \" && exit 1",
+    "test": "echo \"who needs tests, really 😢 \" && exit 0",
     "deploy": "now -e SLACK_TOKEN=$SLACK_TOKEN --token $NOW_TOKEN --npm",
     "alias": "now alias --token=$NOW_TOKEN",
     "now-start": "node ./server"
   },
   "repository": "github:thatconference/thatslackin",
-  "keywords": ["Slack, slackin, node, web"],
+  "keywords": [
+    "Slack, slackin, node, web"
+  ],
   "contributors": [
     {
       "name": "Brett Slaski",
@@ -24,7 +26,7 @@
   ],
   "license": "ISC",
   "engines": {
-    "node": "6.9.x"
+    "node": "^8"
   },
   "now": {
     "name": "that-slackin",
