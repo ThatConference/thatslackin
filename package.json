@@ -30,7 +30,7 @@
   },
   "now": {
     "name": "that-slackin",
-    "alias": "that-slackin",
+    "alias": "thatslack.thatconference.com",
     "env": {
       "PORT": "443"
     },
