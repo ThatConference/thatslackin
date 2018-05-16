@@ -43,5 +43,8 @@
   },
   "dependencies": {
     "slackin": "0.13.0"
+  },
+  "devDependencies": {
+    "now": "^11.1.7"
   }
 }
