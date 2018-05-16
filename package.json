@@ -1,17 +1,43 @@
 {
   "name": "thatslackin",
-  "version": "1.0.1",
-  "description": "That Conference Thatslackin site",
+  "version": "1.0.2",
+  "description": "That Conference THAT slackin WebSite",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"who needs tests, really 😢 \" && exit 1",
+    "deploy": "now -e SLACK_TOKEN=$SLACK_TOKEN --token $NOW_TOKEN --npm",
+    "alias": "now alias --token=$NOW_TOKEN",
+    "now-start": "node ./server"
   },
   "repository": "github:thatconference/thatslackin",
   "keywords": ["Slack, slackin, node, web"],
-  "author": "Brett",
+  "contributors": [
+    {
+      "name": "Brett Slaski",
+      "email": "brett@thatconference.com",
+    },
+    {
+      "name": "Clark Sell",
+      "email": "clark@thatconference.com",
+      "url": "http://unspecified.io/"
+    }
+  ],
   "license": "ISC",
   "engines": {
     "node": "6.9.x"
+  },
+  "now": {
+    "name": "that-slackin",
+    "alias": "that-slackin",
+    "env": {
+      "PORT": "443"
+    },
+    "scale": {
+      "sfo1": {
+        "min": 1,
+        "max": "1"
+      }
+    }
   },
   "dependencies": {
     "slackin": "0.13.0"
